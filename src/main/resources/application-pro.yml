@@ -36,7 +36,7 @@ spring:
   redis:
       host: 47.107.72.214
       port: 6379
-      password:
+      password: rain@123#
       # 连接超时时间（毫秒）
       timeout: 10000
       pool:
