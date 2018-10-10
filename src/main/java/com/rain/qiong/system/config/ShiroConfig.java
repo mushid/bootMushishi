@@ -28,22 +28,22 @@ import java.util.LinkedHashMap;
  */
 @Configuration
 public class ShiroConfig {
-    @Value("${spring.redis.host}")
+    @Value("${spring.redis.host:#{null}}")
     private String host;
-    @Value("${spring.redis.password}")
+    @Value("${spring.redis.password:#{null}}")
     private String password;
-    @Value("${spring.redis.port}")
+    @Value("${spring.redis.port:#{null}}")
     private int port;
-    @Value("${spring.redis.timeout}")
+    @Value("${spring.redis.timeout:#{null}}")
     private int timeout;
 
-    @Value("${cacheType}")
+    @Value("${cacheType:#{null}}")
     private String cacheType;
 
-    @Value("${server.session-timeout}")
+    @Value("${server.session-timeout:#{null}}")
     private int tomcatTimeout;
 
-    @Bean
+    @Bean(name = "lifecycleBeanPostProcessor")
     public static LifecycleBeanPostProcessor getLifecycleBeanPostProcessor() {
         return new LifecycleBeanPostProcessor();
     }
