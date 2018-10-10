@@ -34,13 +34,13 @@ public class ShiroConfig {
     private String password;
     @Value("${spring.redis.port:6379}")
     private int port;
-    @Value("${spring.redis.timeout}")
+    @Value("${spring.redis.timeout:10000}")
     private int timeout;
 
-    @Value("${cacheType}")
+    @Value("${cacheType:redis}")
     private String cacheType;
 
-    @Value("${server.session-timeout}")
+    @Value("${server.session-timeout:1800}")
     private int tomcatTimeout;
 
     @Bean
