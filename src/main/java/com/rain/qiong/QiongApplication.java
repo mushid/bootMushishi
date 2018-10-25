@@ -13,7 +13,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 public class QiongApplication {
     public static void main(String[] args) {
         SpringApplication.run(QiongApplication.class, args);
-        System.out.print("oishl");
+        System.out.print("oishlwetqwryreuj");
         System.out.println("ヾ(◍°∇°◍)ﾉﾞ    rain启动成功      ヾ(◍°∇°◍)ﾉ");
     }
 }
