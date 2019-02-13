@@ -10,7 +10,7 @@ spring:
     driverClassName: com.mysql.jdbc.Driver
     url: jdbc:mysql://47.107.72.214:3306/rain?characterEncoding=utf8&useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
     username: root
-    password: root@123#
+    password: Root@123#RAIN
     initialSize: 1
     minIdle: 3
     maxActive: 20
